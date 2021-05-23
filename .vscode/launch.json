@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch EstCondicional",
+            "request": "launch",
+            "mainClass": "EstCondicional",
+            "projectName": "Programacion-Upeu_6ecbdc"
+        },
+        {
+            "type": "java",
+            "name": "Launch StrRepetitive",
+            "request": "launch",
+            "mainClass": "StrRepetitive",
+            "projectName": "Programacion-Upeu_6ecbdc"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio01",
+            "request": "launch",
+            "mainClass": "ejercicio01",
+            "projectName": "Programacion-Upeu_6ecbdc"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejerciciosCiclicos",
+            "request": "launch",
+            "mainClass": "ejerciciosCiclicos",
+            "projectName": "Programacion-Upeu_6ecbdc"
+        },
+        {
+            "type": "java",
+            "name": "Launch practica",
+            "request": "launch",
+            "mainClass": "practica",
+            "projectName": "Programacion-Upeu_6ecbdc"
+        }
+    ]
+}
