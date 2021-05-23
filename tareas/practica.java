@@ -279,30 +279,11 @@ diagrama de flujo, pseudocódigo y diagrama N/S*/
         }
 
     }
-
-    static void numeros(){
-        int total=0, n=0;
-
-        System.out.println("ingrese un numero");
-        total=teclado.nextInt();
-            if (total >0) {
-            System.out.println("digite un numero");
-            n=teclado.nextInt();
-            Math.pow(n, 2);
-            System.out.println("digite un numero"+total);
-            total=total-1;
-            }
-            else{
-                
-            }   
-        
-
-
-    }
+   
 
  
 public static void main(String[] args) {
-    numeros();
+    
 }
 
 
