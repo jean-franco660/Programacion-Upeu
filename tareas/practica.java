@@ -12,7 +12,7 @@ al cabo de 6 años? Realice el algoritmo y represente la solución
 mediante el diagrama de flujo, el pseudocódigo
 y el diagrama N/S, utilizando el ciclo apropiado */
 
-    int tiempo, anos=6;
+    int anos=6;
     double Capital=1.500;
     double respuesta1, tim1, tim2, tim3, tim4, tim5 ;
     double incremento=0.10;
