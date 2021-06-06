@@ -1,85 +1,73 @@
-import java.sql.Time;
 import java.util.Scanner;
-
-
 
 public class practica {
 static Scanner teclado=new Scanner(System.in);
 
     static void saldo(){
-/* Un profesor tiene un salario inicial de $1500, y recibe un 
-incremento de 10% anual durante 6 años.¿Cuál es su salario 
-al cabo de 6 años? Realice el algoritmo y represente la solución 
+/* Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10% anual durante 6 años.¿Cuál es su salario al cabo de 6 años? Realice el algoritmo y represente la solución 
 mediante el diagrama de flujo, el pseudocódigo
 y el diagrama N/S, utilizando el ciclo apropiado */
 
-    int tiempo, anos=6;
-    double Capital=1.500;
-    double respuesta1, tim1, tim2, tim3, tim4, tim5 ;
-    double incremento=0.10;
+double Capital=1.500;
+int anos=6;
+double incremento=0.1;
+double tim1, tim2, tim3, tim4, tim5,respuesta1;
 
-    if (anos==6){
-    tim1=incremento*Capital/100;
-    tim1=tim1+Capital;
-    tim1=tim1*12;
-    System.out.println("El salario de 1 año es: "+tim1);
-    }
-    if (anos==6) {
+        for (int i = 1; i <2; i++) {
+        tim1=incremento*Capital/100;
+        tim1=tim1+Capital;
+        tim1=tim1*12;
+        System.out.println("El salario del 1er año es: "+tim1);
+        tim2=incremento*Capital/100;
+        tim2=tim2+Capital;
+        tim2=tim2*24;
+        System.out.println("El salario de 2do año es: "+tim2);
 
-    tim2=incremento*Capital/100;
-    tim2=tim2+Capital;
-    tim2=tim2*24;
-    System.out.println("El salario de 2 años es: "+tim2);
-    } 
-    
-    if (anos==6){
-    tim3=incremento*Capital/100;
-    tim3=tim3+Capital;
-    tim3=tim3*36;
-    System.out.println("El salario de 3 años es: "+tim3);   
-    }
+        tim3=incremento*Capital/100;
+        tim3=tim3+Capital;
+        tim3=tim3*36;
+        System.out.println("El salario de 3er año es: "+tim3);
 
-    if (anos==6) {
-    tim4=incremento*Capital/100;
-    tim4=tim4+Capital;
-    tim4=tim4*48;
-    System.out.println("el salario de 4 años es: "+tim4);
-    }
+        tim4=incremento*Capital/100;
+        tim4=tim4+Capital;
+        tim4=tim4*48;
+        System.out.println("el salario de 4to año es: "+tim4);
 
-    if (anos==6) {
-    tim5=incremento*Capital/100;
-    tim5=tim5+1500;
-    tim5=tim5*60;
-    System.out.println("el salario de 5 años es: "+tim5);
-    }
+        tim5=incremento*Capital/100;
+        tim5=tim5+1500;
+        tim5=tim5*60;
+        System.out.println("el salario de 5to año es: "+tim5);
 
-    if(anos==6){
-    respuesta1=incremento*Capital/100;
-    respuesta1=respuesta1+1500;
-    respuesta1=respuesta1*72;
-    System.out.println("el salario de 6 años es: "+respuesta1);}
-    }
-    
+        respuesta1=incremento*Capital/100;
+        respuesta1=respuesta1+1500;
+        respuesta1=respuesta1*72;
+        System.out.println("el salario de 6to año es: "+respuesta1);  
+
+        }while (anos >6) {      
+}
+
+}  
+
     static void banco(){
-/*Un cliente de un banco deposita X cantidad de pesos cada mes en una cuenta de ahorros.
-La cuenta percibe un interés fijo durante un año de 10% anual.
-Realice un algoritmo para determinar el total de la inversión final de cada año en los próximos N años.
-Represente la solución mediante el diagrama de flujo, el pseudocódigo y diagrama N/S*/
+    /*Un cliente de un banco deposita X cantidad de pesos cada mes en una cuenta de ahorros.
+    La cuenta percibe un interés fijo durante un año de 10% anual.
+    Realice un algoritmo para determinar el total de la inversión final de cada año en los próximos N años.
+    Represente la solución mediante el diagrama de flujo, el pseudocódigo y diagrama N/S*/
 
-int cantidad, inter=10;
-int anos=0;
-double resp;
+    int cantidad, inter=10;
+    int anos=0;
+    double resp;
 
-System.out.println("Ingrese la cantidad: ");
-cantidad=teclado.nextInt();
+    System.out.println("Ingrese la cantidad: ");
+    cantidad=teclado.nextInt();
 
-System.out.println("Ingrese el año: ");
-anos=teclado.nextInt();
+    System.out.println("Ingrese el año: ");
+    anos=teclado.nextInt();
 
-resp=inter*cantidad/100;
-resp=resp+cantidad;
-resp=resp*anos;
-System.out.println("El total de la inversion es: "+resp);
+    resp=inter*cantidad/100;
+    resp=resp+cantidad;
+    resp=resp*anos;
+    System.out.println("El total de la inversion es: "+resp);
 
 
 }
@@ -91,7 +79,6 @@ System.out.println("El total de la inversion es: "+resp);
     que deposito en el corte anterior. Para calcular el pago mínimo se considera 15% del saldo actual, y el pago para no generar interese
     corresponde a 85% del saldo actual, considerando que el saldo actual debe incluir 12% de los intereses causados por no realizar 
     el pago mínimo y $2000 de multa por el mismo motivo. Realice el algoritmo correspondiente y represéntelo mediante diagrama de flujo y pseudocódigo*/
-
 
     double saldo;
     int interes=15, interes2=85, interes3=12;
@@ -112,9 +99,9 @@ System.out.println("El total de la inversion es: "+resp);
 
     static void multiplicar(){
 
-/*Realice un algoritmo para obtener la tabla de multiplicar
-de un entero K comenzando desde el 1. Represéntelo mediante
-diagrama de flujo, pseudocódigo y diagrama N/S*/
+    /*Realice un algoritmo para obtener la tabla de multiplicar
+    de un entero K comenzando desde el 1. Represéntelo mediante
+    diagrama de flujo, pseudocódigo y diagrama N/S*/
 
         int K;
         System.out.print("Introduce un número: ");                                                         
@@ -279,30 +266,31 @@ diagrama de flujo, pseudocódigo y diagrama N/S*/
         }
 
     }
+    static void caja(){
+/*Se desea saber el total de una caja registradora de un almacén, se conoce el número de billetes y monedas, así como su valor.
+Realice un algoritmo para determinar el total. Represente la solución mediante el diagrama de flujo, el pseudocódigo y el diagrama N/S.*/
 
-    static void numeros(){
-        int total=0, n=0;
-
-        System.out.println("ingrese un numero");
-        total=teclado.nextInt();
-            if (total >0) {
-            System.out.println("digite un numero");
-            n=teclado.nextInt();
-            Math.pow(n, 2);
-            System.out.println("digite un numero"+total);
-            total=total-1;
-            }
-            else{
-                
-            }   
+        int billetes, monedas;
+        double valor1, valor2, total;
         
+        System.out.println("Ingrese el numero de monedas");
+        monedas=teclado.nextInt();
+        System.out.println("Ingrese el numero de billetes");
+        billetes=teclado.nextInt();
+
+        valor1=monedas*0.26;
+        System.out.println("El valor de la moneda es: "+valor1);
+        valor2=valor1+billetes;
+        System.out.println("El valor de los billetes es: "+valor2);
+
+        total=valor1+valor2;
+        System.out.println("El total es: "+total);
 
 
     }
 
- 
 public static void main(String[] args) {
-    numeros();
+    
 }
 
 

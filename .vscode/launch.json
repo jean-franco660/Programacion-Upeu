@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch tarea",
+            "request": "launch",
+            "mainClass": "tarea",
+            "projectName": "Programacion-Upeu_6ecbdc"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio02",
+            "request": "launch",
+            "mainClass": "ejercicio02",
+            "projectName": "Programacion-Upeu_6ecbdc"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicios",
+            "request": "launch",
+            "mainClass": "ejercicios",
+            "projectName": "Programacion-Upeu_6ecbdc"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

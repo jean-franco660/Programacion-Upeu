@@ -1,11 +1,11 @@
 //libreria,
 import java.util.Scanner;
 
-
-
 public class ejercicio01 { 
-    //Dado dos números enteros, hallar la suma, resta, multiplicación, división y residuo.
-   static Scanner teclado=new Scanner(System.in);
+static Scanner teclado=new Scanner(System.in);
+
+//Dado dos números enteros, hallar la suma, resta, multiplicación, división y residuo.
+   
  static void suma(){
     int num1=10;
     int num2=200;
@@ -28,7 +28,6 @@ public class ejercicio01 {
  
  static void ejercicio02(){
     double nota1, nota2, nota3, nota4, promedio;
-    Scanner teclado=new Scanner(System.in);
     System.out.print("Ingrese nota 1: ");
     nota1 = teclado.nextDouble();
     System.out.print("Ingrese nota 2: ");
